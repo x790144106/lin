@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font: 12px/150% "微软雅黑", "\5b8b\4f53"; 
+    background: url(images/dl_bj.png);
+}
+img{
+    border: 0;
+    vertical-align: middle;
+}
