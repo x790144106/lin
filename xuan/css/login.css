@@ -48,10 +48,14 @@ body {
     margin-left: 6px;
 }
 .forget_password{
+    display: block;
     color: #fff;
     margin-left: 0.17rem;
+    float: right;
 }
 .register{
+    float: right;
+    display: block;
     color: #fff;
     margin-left: 0.04rem;
 }
