@@ -1,3 +1,4 @@
+#lb_bj{width: 75%}
 body {
     display: flex;
     justify-content:center;
@@ -10,7 +11,6 @@ body {
     background-repeat:no-repeat;
     background-size: 100% 100%;
 }
-#lb_bj{width: 75%;}
 
 .yhm_dl,.mm_dl{
     width: 100%;
@@ -47,11 +47,51 @@ body {
 .yhm_dl img,.mm_dl img{
     margin-left: 6px;
 }
-.forget_password{
-    color: #fff;
-    margin-left: 0.17rem;
+.yhm_dl_gym{height: 10%}
+.yhm_sr{
+    width: 60%;
+    box-sizing:border-box;
+    background: rgba(255,255,255,0.2);
+    height: 100%;
+    border: none;
+    line-height: 44px;
+    padding-top: 2% 0;
+    margin:2% 0;
+    padding-bottom: 3%;
+    color: #c1c1c1;
+    font-size: 24px;
+    padding-left: 2%;
+    float: left;
 }
-.register{
+.yhm_sc{height: 100%}
+.yhm_sr input{
+    width: 70%;
+    background: none;
+    border: none;
+    color: #c1c1c1;
+    font-size: 14px;
+}
+#getCaptcha{
+    background: #af904a;
+    text-align: center;
+    height: 100%;
     color: #fff;
-    margin-left: 0.04rem;
+    width: 35%;
+    border: none;
+    font-size: 12px;
+    line-height: 44px;
+    margin-left: 0;
+    cursor: pointer;
+    margin: 2% 0 2% 0;
+    float: right;
+}
+#xy_zc{
+    padding-top:6%;
+    color: #fff;
+    font-size: 14px; 
+}
+#xy_zc span{opacity: 0.6;}
+#ty_zc{
+    padding-left: 1%;
+    color: #f8e195;
 }
