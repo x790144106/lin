@@ -6,7 +6,7 @@ body {
     /* 注意这里需要设置高度来查看垂直居中效果 */
     height: 100%;
 
-    background: url(../images/dl_bj.png);
+    background: url(../images/dr_bj.png);
     background-position:center; 
     background-repeat:no-repeat;
     background-size: 100% 100%;
