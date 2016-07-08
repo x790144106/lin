@@ -4,11 +4,17 @@ $(function(){
         var User=$("#user").val();
         var Pass=$("#pass").val();
         // var Pass=her_md5($("#pass").val());
-        if(User=="123456789"&&Pass=="111111"){
-            window.location.href = "index.html";
+        // var cc=(User=="123456789"&&Pass=="111111")
+        if(User==""||Pass==""){
+            alert("用户名或密码不能为空")
         }else{
-            alert("用户名未注册或密码错误");  
-        };
+            if(User=="123456789"&&Pass=="111111"){
+                window.location.href = "index.html";
+            }else{
+                alert("用户名未注册或密码错误")
+            };
+        }
+        
         
         // if (User!=""&&Pass!="") {
         //     $.ajax({
