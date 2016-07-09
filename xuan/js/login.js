@@ -1,4 +1,8 @@
 $(function(){
+
+    var user=sessionStorage.getItem("user");
+    if (user) {$("#user").val(user);};
+
     $("#login").click(function(event){
         event.stopPropagation();
         var User=$("#user").val();
@@ -8,10 +12,11 @@ $(function(){
         if(User==""||Pass==""){
             alert("用户名或密码不能为空")
         }else{
-            if(User=="123456789"&&Pass=="111111"){
+            if(User=="18767120504"&&Pass=="111111"){
+                sessionStorage.setItem("user",User);
                 window.location.href = "index.html";
             }else{
-                alert("用户名未注册或密码错误")
+                alert("用户名未注册或密码错误");
             };
         }
         
@@ -36,9 +41,13 @@ $(function(){
 
     });
     $(".register").click(function(){
+        var storage=sessionStorage;
+        storage.setItem("user",$("#user").val());
         window.location.href="registered.html";
     });
     $(".forget_password").click(function(){
+        var storage=sessionStorage;
+        storage.setItem("user",$("#user").val());
         window.location.href="password.html";
     });
 });

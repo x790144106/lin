@@ -1,4 +1,8 @@
 $(function(){
+
+    var user=sessionStorage.getItem("user");
+    if (user) {$("#phoneNum").val(user);};
+    
     var getCaptcha=$("#getCaptcha");
     // $("#phoneNum").attr("disabled",true);
     

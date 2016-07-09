@@ -1,4 +1,9 @@
 $(function(){
+
+    var user=sessionStorage.getItem("user");
+    if (user) {$("#phoneNum").val(user);};
+    
+
     var getCaptcha=$("#getCaptcha");
     var phoneNum=$("#phoneNum").val(); 
     getCaptcha.bind("click",function(){
