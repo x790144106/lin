@@ -2,7 +2,7 @@ $(function(){
     var user=sessionStorage.getItem("user");
     if (user) {
         $(".U").html("<a href='#'>"+user+"</a>");
-    }else{$(".U").html("<a href='#'>未登入</a>")};
+    }else{$(".U").html("<a href='login.html'>未登入</a>")};
     
     $(".ck_select").change(function(){
         var json={
