@@ -81,7 +81,7 @@ $(function(){
  // url:   "http://10.8.208.170:8888/",
     url:  "http://30d3f976.ngrok.natapp.cn/",
     type: "GET",
-    // dataType: "binary", //因为是调用nodeJS返回的json数据，所以必须使用binary类型
+    // dataType: "string", //因为是调用nodeJS返回的json数据，所以必须使用binary类型
     error: function(XMLHttpRequest, textStatus, errorThrown){
     var s1=XMLHttpRequest;
     var s2=textStatus;
@@ -91,7 +91,7 @@ $(function(){
     success: function(data){
     // $("#feeds").html(data);
         var dataObj=eval('('+data+')');//转换为json对象
-     // var dataObj=data;
+      // var dataObj=data;
         $("#id").html("编号："+dataObj.id);
         $("#name").html("姓名："+dataObj.name);
         $("#arg").html("年龄："+dataObj.arg);
