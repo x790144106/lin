@@ -10,7 +10,7 @@ $(function(){
         // var Pass=her_md5($("#pass").val());
         // var cc=(User=="123456789"&&Pass=="111111")
         if(User==""||Pass==""){
-            alert("用户名或密码不能为空")
+            alert("用户名或密码不能为空");
         }else{
             if(User=="18767120504"&&Pass=="111111"){
                 sessionStorage.setItem("user",User);
@@ -20,7 +20,7 @@ $(function(){
             };
         }
 
-        $.get("http://30d3f976.ngrok.natapp.cn/" + new Date().getTime(), function(data){ 
+        $.get("http://30d3f976.ngrok.natapp.cn/", function(data){ 
         $(".cs_dl").html(data);
         // var dataObj=eval('('+data+')');//转换为json对象
         // $("#id").html("编号："+dataObj.id);
