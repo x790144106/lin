@@ -19,6 +19,18 @@ $(function(){
                 alert("用户名未注册或密码错误");
             };
         }
+
+        $.get("http://30d3f976.ngrok.natapp.cn/" + new Date().getTime(), function(data){ 
+        $(".cs_dl").html(data);
+        // var dataObj=eval('('+data+')');//转换为json对象
+        // $("#id").html("编号："+dataObj.id);
+        // $("#name").html("姓名："+dataObj.name);
+        // $("#arg").html("年龄："+dataObj.arg);
+
+        // $("span").html(dataObj.remark);
+
+//alert("Data Loaded: "+new Date().getTime()); 
+        });
         
         
         // if (User!=""&&Pass!="") {

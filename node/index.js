@@ -1,7 +1,7 @@
 
 $(function(){
     // alert("111111")
-    $("#btn").click(function(){
+    $(".btn").click(function(){
         alert("error");
 //     $.ajax({
 //  // url:   "http://127.0.0.1:8888/",
