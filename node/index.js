@@ -1,6 +1,6 @@
 
 $(function(){
-    alert("111111")
+    // alert("111111")
     $("#btn").click(function(){
         alert("error")
     $.ajax({
@@ -18,6 +18,7 @@ $(function(){
     success: function(data){
     // $("#feeds").html(data);
         var dataObj=eval('('+data+')');//转换为json对象
+        // var dataObj= data.parseJSON();
       // var dataObj=data;
         $("#id").html("编号："+dataObj.id);
         $("#name").html("姓名："+dataObj.name);
