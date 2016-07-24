@@ -6,8 +6,8 @@ $(function(){
     $.ajax({
  // url:   "http://127.0.0.1:8888/",
  // url:   "http://10.8.208.170:8888/",
-    url:  "http://115.236.9.81:8888/"
-    // url:  "http://30d3f976.ngrok.natapp.cn/",
+    // url:  "http://115.236.9.81:8888/"
+    url:  "http://30d3f976.ngrok.natapp.cn/",
     type: "GET",
     // dataType: "string", //因为是调用nodeJS返回的json数据，所以必须使用binary类型
     error: function(XMLHttpRequest, textStatus, errorThrown){
