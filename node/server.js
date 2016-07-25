@@ -29,7 +29,8 @@ var str={"id":"123",name:"jack",arg:11111};
 // console.log(123);
 app.get('/',function(req,res){
     // str=fs.readFileSync('data.txt');
-    res.render('index',str);
+    // res.render('index',str);
+    res.send({data:str})
     // res.write(str)
 });
 // connection.end();

@@ -11,15 +11,17 @@
   <p><span>工作：</span><input type="text" name="job" /></p>
  </form>
  <button id="send">提交</button>
- <script type="text/javascript" src="zepto.js"></script>
+ <script type="text/javascript" src="http://libs.useso.com/js/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript">
  $(function(){
   $("#send").click(function(){
    var cont = $("input").serialize();
    $.ajax({
-    url:'ab.php',
+    url:'http://3146afcd.ngrok.natapp.cn/ab.php',
     type:'post',
     dataType:'json',
+	//jsonp: "callback",//传递给请求处理程序或页面的，用以获得jsonp回调函数名的参数名(默认为:callback)
+	//jsonpCallback:"success_jsonpCallback",//自定义的jsonp回调函数名称，默认为jQuery自动生成的随机函数名
     data:cont,
     success:function(data){
      var str = data.username + data.age + data.job;
