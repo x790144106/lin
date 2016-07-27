@@ -17,14 +17,15 @@
   $("#send").click(function(){
    var cont = $("input").serialize();
    $.ajax({
-    url:'https://x790144106.github.io/lin/node/ab.php',
+    url:'http://3c1a7c97.ngrok.natapp.cn/ab.php',
+  //url:'ab.php',
     type:'post',
     dataType:'json',
-	//jsonp: "callback",//传递给请求处理程序或页面的，用以获得jsonp回调函数名的参数名(默认为:callback)
-	//jsonpCallback:"success_jsonpCallback",//自定义的jsonp回调函数名称，默认为jQuery自动生成的随机函数名
+  //jsonp: "callback",//传递给请求处理程序或页面的，用以获得jsonp回调函数名的参数名(默认为:callback)
+  //jsonpCallback:"success_jsonpCallback",//自定义的jsonp回调函数名称，默认为jQuery自动生成的随机函数名
     data:cont,
     success:function(data){
-     var str = data.username + data.age + data.job;
+     var str = data.username + data.age + data.job+data.row[0];
      $("#result").html(str);
     }
    });
