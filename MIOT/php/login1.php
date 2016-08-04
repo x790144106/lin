@@ -12,7 +12,7 @@ if($username!=""){
 // $age = $_POST['age'];
 // $job = $_POST['job'];
 
-$mysql_server_name="localhost"; //数据库服务器名称
+$mysql_server_name="115.236.9.86"; //数据库服务器名称
 $mysql_username="root"; // 连接数据库用户名
 $mysql_password="123456"; // 连接数据库密码
 $mysql_database="moit"; // 数据库的名字
