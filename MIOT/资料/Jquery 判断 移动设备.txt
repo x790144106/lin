@@ -1,0 +1,29 @@
+第一种：
+if (navigator.userAgent.match(/IEMobile|BlackBerry|Android|iPod|iPhone|iPad/i)) {
+            //是移动设备           
+}
+
+第二种：
+
+
+var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i) ? true: false;
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i) ? true: false;
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i) ? true: false;
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i) ? true: false;
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());
+    }
+};
+
+if (isMobile.any()){ 
+    //是移动设备 
+}

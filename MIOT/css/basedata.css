@@ -1,0 +1,15 @@
+#dept-m h2,#user-m h2,#permission-m h2{
+    margin: 8px 0;
+}
+#dept-m h2:hover,#user-m h2:hover,#permission-m h2:hover{
+    color: #dca598;
+    cursor:pointer;
+}
+#dept-m ul,#user-m ul,#permission-m ul{list-style: none;}
+#dept-m li,#user-m li,#permission-m li{
+    padding: 5px 18px;
+}
+#dept-m li:hover,#user-m li:hover,#permission-m li:hover{
+    color: #dca598;
+    cursor:pointer;
+}

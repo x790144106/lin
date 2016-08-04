@@ -1,0 +1,37 @@
+#content{
+    float: right;
+    width: 79.5%;
+}
+#leftbar{
+    float: left;
+    width: 20%;
+}
+#client-m h2,#order-m h2{
+    margin: 8px 0;
+}
+#client-m h2:hover,#order-m h2:hover{
+    color: #dca598;
+    cursor:pointer;
+}
+#client-m ul,#order-m ul{list-style: none;}
+#client-m li,#order-m li{
+    padding: 5px 18px;
+}
+#client-m li:hover,#order-m li:hover{
+    color: #dca598;
+    cursor:pointer;
+}
+.box-content{
+    margin-left: 20%;
+    /*text-align: center;*/
+    justify-content:center;
+    align-items: center;
+}
+#footer{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+.selected{
+    background: #d3d3d3;
+}

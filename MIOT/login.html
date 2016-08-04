@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MIOT登入</title>
+    <meta charset="utf-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <script type="text/javascript">
+        var iWidth=document.documentElement.clientWidth;
+        document.getElementsByTagName("html")[0].style.fontSize=iWidth+"px";
+    </script>
+</head>
+<body>
+    <div>
+    <div class="top_div"><h1>MIOT登入</h1></div> 
+    <div class="u_form">
+        <!-- <div>
+            <div class="tou"></div>
+            <div class="left_hand"></div>
+            <div class="right_hand"></div>
+        </div> -->
+        <div class="user_ipt">
+        <p>
+            <span class="u_logo"><img src="img/username.png"></span>
+            <input class="ipt" id="userN" type="text" placeholder="请输入用户名" value="">
+            <!-- <select editable class="ipt"></select> -->
+        </p>
+        </div>
+        <div class="password_ipt">
+        <p>
+            <span class="p_logo"><img src="img/password.png"></span>
+            <input class="ipt" id="userP" type="password" placeholder="请输入密码" value="">
+        </p>
+        </div>
+        <div class="u_login">
+            <p class="forget_p">
+               <!-- <span class="f_p">
+                   <a href="#">忘记密码?</a>
+               </span> -->
+               <span class="login_regist">
+                   <a href="#" id="regist">注册</a>
+                   <button id="login_b">登 入</button>
+               </span> 
+            </p>
+        </div>
+
+    </div>
+    </div>
+<script type="text/javascript" src="http://libs.useso.com/js/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script src="js/md5.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>
